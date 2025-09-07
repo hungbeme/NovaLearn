@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="./css/dashboard.css" />
+  </head>
+
+  <body>
+    <!--================-->
+    <!-- TOP BAR -->
+    <!--================-->
+
+    <header class="header">
+      <a href="#">
+        <img src="./images/site-logo.png" alt="Website Logo" class="logo" />
+      </a>
+
+      <h1>Welcome John Doe</h1>
+
+      <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+      <ion-icon name="close-outline" class="close-icon"></ion-icon>
+    </header>
+
+    <div class="main-container">
+      <!--================-->
+      <!-- MENU  -->
+      <!--================-->
+      <menu class="menu">
+        <p class="menu-headline">GENERAL</p>
+        <ul class="menu-list">
+          <li class="active-option options">
+            <ion-icon name="grid-outline" class="options-icon"></ion-icon>
+            <a href="#"> Dashboard </a>
+          </li>
+
+          <li class="options">
+            <ion-icon name="book-outline" class="options-icon"></ion-icon>
+            <a href="#"> Your Courses </a>
+          </li>
+
+          <li class="options">
+            <ion-icon name="create-outline" class="options-icon"></ion-icon>
+            <a href="#"> Assignments </a>
+          </li>
+
+          <li class="options">
+            <ion-icon name="person-outline" class="options-icon"></ion-icon>
+            <a href="#"> Profile </a>
+          </li>
+
+          <li class="options">
+            <ion-icon name="log-out-outline" class="options-icon"></ion-icon>
+            <a href="#"> Logout </a>
+          </li>
+        </ul>
+      </menu>
+
+      <!--================-->
+      <!-- MAIN BAR -->
+      <!--================-->
+
+      <main class="main">
+        <!--================-->
+        <!-- ALL COURSES LIST -->
+        <!--================-->
+        <div class="courses-section">
+          <div class="courses-section-text">
+            <h2 class="courses-headline">COURSES:</h2>
+            <p class="course-subtext">
+              Here’s a quick view of your courses, assignments, and progress:
+            </p>
+          </div>
+
+          <div class="course-grid">
+            <div>
+              <p class="course-name">Time Management & Productivity</p>
+              <p class="course-description">
+                Practical methods to organize your time and reach your goals
+                stress-free.
+              </p>
+              <button>Continue</button>
+            </div>
+
+            <div>
+              <p class="course-name">Introduction to Digital Marketing</p>
+              <p class="course-description">
+                Learn the basics of online branding and advertising.
+              </p>
+              <button>Enroll Now</button>
+            </div>
+
+            <div>
+              <p class="course-name">Web Development for Beginners</p>
+              <p class="course-description">
+                Learn how to build modern websites from scratch with HTML, CSS,
+                and JavaScript.
+              </p>
+              <button>Enroll Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!--================-->
+        <!-- YOUR COURSES PAGE -->
+        <!--================-->
+
+        <div class="your-courses-page">
+          <div class="your-courses-text">
+            <h2>Explore Courses</h2>
+            <p>
+              Browse a wide range of courses designed to help you learn new
+              skills and grow at your own pace.
+            </p>
+          </div>
+
+          <div class="your-courses-section">
+            <!--================-->
+            <!-- TECH CATEGORY -->
+
+            <div class="tech">
+              <div class="category-toggle-head">
+                <p class="category-headline">🌍 Technology & Development</p>
+                <button class="toogle-more">
+                  <ion-icon name="chevron-up-outline" class="close"></ion-icon>
+                  <ion-icon name="chevron-down-outline" class="open"></ion-icon>
+                </button>
+              </div>
+
+              <div class="category hide-sections">
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Introduction to Python Programming:
+                  </p>
+                  <p class="category-content-subtext">
+                    Learn coding basics with one of the world’s most popular
+                    languages.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Mobile App Development :
+                  </p>
+                  <p class="category-content-subtext">
+                    Create simple apps for Android and iOS.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Introduction to Data Science:
+                  </p>
+                  <p class="category-content-subtext">
+                    Get started with data analysis, visualization, and machine
+                    learning.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Web Development for Beginners:
+                  </p>
+                  <p class="category-content-subtext">
+                    Learn how to build modern websites from scratch with HTML,
+                    CSS, and JavaScript.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Cybersecurity Fundamentals:
+                  </p>
+                  <p class="category-content-subtext">
+                    Learn how to protect information and stay safe online.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!--================-->
+            <!-- BUSINESS CATEGORY -->
+
+            <div class="business">
+              <div class="category-toggle-head">
+                <p class="category-headline">💼 Business & Entrepreneurship</p>
+                <button class="toogle-more">
+                  <ion-icon name="chevron-up-outline" class="close"></ion-icon>
+                  <ion-icon name="chevron-down-outline" class="open"></ion-icon>
+                </button>
+              </div>
+
+              <div class="category hide-sections">
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Digital Marketing Essentials
+                  </p>
+                  <p class="category-content-subtext">
+                    Master SEO, social media, and online advertising.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">Entrepreneurship 101:</p>
+                  <p class="category-content-subtext">
+                    Learn how to start and manage a business.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Project Management Basics:
+                  </p>
+                  <p class="category-content-subtext">
+                    Organize, plan, and execute projects successfully.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Financial Literacy & Budgeting:
+                  </p>
+                  <p class="category-content-subtext">
+                    Manage personal and business finances effectively.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    E-Commerce for Beginners:
+                  </p>
+                  <p class="category-content-subtext">
+                    Learn how to set up and run an online store.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!--================-->
+            <!-- CREATIVE-SKILLS CATEGORY -->
+
+            <div class="creative-skills">
+              <div class="category-toggle-head">
+                <p class="category-headline">🎨 Creative Skills</p>
+                <button class="toogle-more">
+                  <ion-icon name="chevron-up-outline" class="close"></ion-icon>
+                  <ion-icon name="chevron-down-outline" class="open"></ion-icon>
+                </button>
+              </div>
+
+              <div class="category hide-sections">
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Graphic Design Fundamentals
+                  </p>
+                  <p class="category-content-subtext">
+                    Learn design principles and tools like Canva and Photoshop.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Photography for Beginners:
+                  </p>
+                  <p class="category-content-subtext">
+                    Master the basics of capturing stunning photos.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Video Editing Essentials:
+                  </p>
+                  <p class="category-content-subtext">
+                    Edit professional-looking videos with simple tools.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">Creative Writing:</p>
+                  <p class="category-content-subtext">
+                    Improve your storytelling and writing techniques.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Music Production Basics:
+                  </p>
+                  <p class="category-content-subtext">
+                    Learn how to create and mix music digitally.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!--================-->
+            <!-- PERSONAL DEVELOPMENT CATEGORY -->
+
+            <div class="personal-development">
+              <div class="category-toggle-head">
+                <p class="category-headline">📚 Personal Development</p>
+                <button class="toogle-more">
+                  <ion-icon name="chevron-up-outline" class="close"></ion-icon>
+                  <ion-icon name="chevron-down-outline" class="open"></ion-icon>
+                </button>
+              </div>
+
+              <div class="category hide-sections">
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Time Management & Productivity
+                  </p>
+                  <p class="category-content-subtext">
+                    Organize your schedule for peak performance.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Public Speaking & Communication
+                  </p>
+                  <p class="category-content-subtext">
+                    Build confidence and speak effectively.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Critical Thinking & Problem Solving.
+                  </p>
+                  <p class="category-content-subtext">
+                    Strengthen your decision-making skills
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">Leadership Skills:</p>
+                  <p class="category-content-subtext">
+                    Learn what makes a strong and effective leader.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Stress Management & Mindfulness
+                  </p>
+                  <p class="category-content-subtext">
+                    Stay calm and balanced in daily life.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!--================-->
+            <!-- LIFESTYLE-WELLNESS CATEGORY -->
+
+            <div class="lifestyle-wellness">
+              <div class="category-toggle-head">
+                <p class="category-headline">🌱 Lifestyle & Wellness</p>
+                <button class="toogle-more">
+                  <ion-icon name="chevron-up-outline" class="close"></ion-icon>
+                  <ion-icon name="chevron-down-outline" class="open"></ion-icon>
+                </button>
+              </div>
+
+              <div class="category hide-sections">
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Healthy Living & Nutrition
+                  </p>
+                  <p class="category-content-subtext">
+                    Learn how to build better eating habits.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Yoga & Meditation Basics
+                  </p>
+                  <p class="category-content-subtext">
+                    Simple practices for relaxation and flexibility.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">Fitness for Beginners</p>
+                  <p class="category-content-subtext">
+                    – Get started with home workouts and exercise routines.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Cooking Made Simple –:
+                  </p>
+                  <p class="category-content-subtext">
+                    Learn easy and healthy recipes.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Personal Finance for Everyday Life
+                  </p>
+                  <p class="category-content-subtext">
+                    – Manage money and savings wisely.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!--================-->
+            <!-- ACADEMIC SUPPORT CATEGORY -->
+
+            <div class="academic-support">
+              <div class="category-toggle-head">
+                <p class="category-headline">🧑‍🎓 Academic Support</p>
+                <button class="toogle-more">
+                  <ion-icon name="chevron-up-outline" class="close"></ion-icon>
+                  <ion-icon name="chevron-down-outline" class="open"></ion-icon>
+                </button>
+              </div>
+
+              <div class="category hide-sections">
+                <div class="category-contents">
+                  <p class="category-content-headline">Mathematics Refresher</p>
+                  <p class="category-content-subtext">
+                    Brush up on essential math skills.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    English Grammar & Writing Skills
+                  </p>
+                  <p class="category-content-subtext">
+                    Improve your language and writing confidence.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Basic Science for Everyone
+                  </p>
+                  <p class="category-content-subtext">
+                    Explore everyday science concepts in an easy way.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Study Skills & Exam Preparation :
+                  </p>
+                  <p class="category-content-subtext">
+                    Learn how to study smarter, not harder.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+
+                <div class="category-contents">
+                  <p class="category-content-headline">
+                    Research & Academic Writing
+                  </p>
+                  <p class="category-content-subtext">
+                    Master research methods and formal writing techniques.
+                  </p>
+                  <button class="category-content-btn">Enroll Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--================-->
+        <!-- YOUR ASSIGNMENT PAGE -->
+        <!--================-->
+
+        <div class="assignment-page">
+          <h2 class="ass-headline">Your Assignments</h2>
+          <p class="ass-subtext">
+            Stay on top of your learning by checking pending, ongoing, and
+            completed assignments.
+          </p>
+
+          <p class="ass-text">YOU CURRENTLY HAVE NO PENDING ASSIGNMENT</p>
+          <!-- <div class="ass-page-section">
+            <p>Web Development Project</p>
+            <p>Pending....</p>
+          </div>
+
+          <div class="ass-page-section">
+            <p>Digital Marketing Quiz</p>
+            <p>Completed....</p>
+          </div>
+
+          <div class="ass-page-section">
+            <p>Time Management Case Study</p>
+            <p>Pending....</p>
+          </div> -->
+        </div>
+
+        <!--================-->
+        <!-- YOUR PROFILE PAGE -->
+        <!--================-->
+
+        <div class="profile-page">
+          <div class="headline-content">
+            <h2>My Profile</h2>
+            <p>
+              Manage your details and keep your learning journey personalized.
+            </p>
+          </div>
+
+          <div class="profile-content">
+            <ion-icon name="person-outline" class="user-img"></ion-icon>
+            <p>Name: <span class="user-name"></span></p>
+            <p>Email: <span class="user-email"></span></p>
+            <p>Enrolled course: <span class="user-courses"></span></p>
+            <button>Edit profile</button>
+            <button>Change password</button>
+          </div>
+        </div>
+      </main>
+
+      <!--================-->
+      <!-- ASIDE BAR -->
+      <!--================-->
+
+      <aside class="aside">
+        <!--================-->
+        <!--WIDGETS -->
+        <!--================-->
+        <p class="aside-headline">Widgets</p>
+
+        <div class="aside-contents">
+          <button class="aside-btn">
+            <p>Number of lessons completed:</p>
+            <span>0</span>
+          </button>
+          <button class="aside-btn">
+            <p>Average Time spent learning</p>
+            <span>0-minutes</span>
+          </button>
+          <button class="aside-btn">
+            <p>Streaks:</p>
+            <span>0-days</span>
+          </button>
+        </div>
+      </aside>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

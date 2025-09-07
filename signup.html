@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="./css/login.css" />
+    <script defer src="./js/signup.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="login-container">
+        <div class="img-container">
+          <img src="./images/site-logo.png" alt="" class="logo" />
+          <p>NovaLearn</p>
+        </div>
+
+        <div class="content-section">
+          <h1 class="headline-text">Start Learning Today</h1>
+          <p class="subtext">
+            Join our community of learners and get access to affordable,
+            flexible courses designed to fit your lifestyle.
+          </p>
+        </div>
+
+        <form class="form-section" action="#">
+          <div class="form-div">
+            <div>
+              <label for="User-name">User Name</label>
+              <input
+                type="text"
+                id="User-name"
+                placeholder="John-Doe"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="123@example.com"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="enter password"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                placeholder="confirm password"
+                required
+              />
+            </div>
+          </div>
+
+          <a href="./login.html" target="_blank" class="forgot-password"
+            >Already have an account? Login</a
+          >
+          <button>Create Account</button>
+        </form>
+      </div>
+
+      <div
+        class="signin-img"
+        role="img"
+        aria-label="an image of a text 'LOVE TO LEARN'."
+      ></div>
+    </main>
+  </body>
+</html>
