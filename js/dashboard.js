@@ -6,6 +6,7 @@ const btnOpen = document.querySelector(".menu-icon");
 const btnClose = document.querySelector(".close-icon");
 const headerEl = document.querySelector(".header");
 const mainContainerEl = document.querySelector(".main-container");
+const liOptions = document.querySelector(".options");
 
 btnOpen.addEventListener("click", function () {
   headerEl.classList.toggle("hide");
