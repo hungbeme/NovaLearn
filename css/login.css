@@ -80,6 +80,12 @@ input::placeholder {
   text-transform: capitalize;
 }
 
+.extras {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: space-between;
+}
+
 a:link,
 a:visited {
   color: #032c1f;
