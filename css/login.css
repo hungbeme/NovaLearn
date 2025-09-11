@@ -82,7 +82,8 @@ input::placeholder {
 
 .extras {
   display: flex;
-  gap: 1.2rem;
+  flex-direction: column;
+  gap: 0.8rem;
   justify-content: space-between;
 }
 

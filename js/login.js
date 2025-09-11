@@ -27,7 +27,7 @@ const runApi = async function (emailValue, passwordValue) {
       emailEl.value = "";
       passwordEl.value = "";
       alert("Login sucessfully✅");
-      window.location.href = "./Dahboard.html";
+      window.location.href = "./Dashboard.html";
     } else {
       alert("User not found!!!❌");
     }
@@ -57,7 +57,6 @@ formSectionEl.addEventListener("submit", function (e) {
       emailEl.value = "";
       passwordEl.value = "";
       alert("Login sucessfully✅");
-
       window.location.href = "./Dashboard.html";
     } else {
       runApi(emailValue, passwordValue);

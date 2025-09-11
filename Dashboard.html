@@ -30,7 +30,6 @@
       <!-- MENU  -->
       <!--================-->
       <menu class="menu">
-        <p class="menu-headline">GENERAL</p>
         <ul class="menu-list">
           <li class="active-option options">
             <ion-icon name="grid-outline" class="options-icon"></ion-icon>
@@ -65,41 +64,135 @@
 
       <main class="main">
         <!--================-->
-        <!-- ALL COURSES LIST -->
+        <!-- ASIDE CONTAINER -->
         <!--================-->
-        <div class="courses-section">
-          <div class="courses-section-text">
-            <h2 class="courses-headline">COURSES:</h2>
-            <p class="course-subtext">
-              Here’s a quick view of your courses, assignments, and progress:
-            </p>
-          </div>
 
-          <div class="course-grid">
-            <div>
-              <p class="course-name">Time Management & Productivity</p>
-              <p class="course-description">
-                Practical methods to organize your time and reach your goals
-                stress-free.
-              </p>
-              <button>Continue</button>
+        <div class="dashboard">
+          <aside class="aside">
+            <div class="aside-contents">
+              <div class="aside-btn">
+                <p>Number of lessons completed:</p>
+                <div class="wrapper">
+                  <div class="var">5/10</div>
+                </div>
+              </div>
+              <div class="aside-btn">
+                <p>Average Time spent learning</p>
+                <span>180-minutes</span>
+              </div>
+              <div class="aside-btn">
+                <p>Streaks:</p>
+                <span>5-days</span>
+              </div>
+              <div class="aside-btn">
+                <p>Certificates Earned:</p>
+                <span>1</span>
+              </div>
+            </div>
+          </aside>
+
+          <!--================-->
+          <!-- ALL COURSES LIST -->
+          <!--================-->
+          <div class="courses-section">
+            <div class="courses-section-text">
+              <div>
+                <h2 class="courses-headline">COURSES:</h2>
+                <p class="course-subtext">
+                  Here’s a quick view of your courses, assignments, and
+                  progress:
+                </p>
+              </div>
+              <a href="#" class="link2courses"> View All</a>
             </div>
 
-            <div>
-              <p class="course-name">Introduction to Digital Marketing</p>
-              <p class="course-description">
-                Learn the basics of online branding and advertising.
-              </p>
-              <button>Enroll Now</button>
-            </div>
+            <div class="course-grid">
+              <div class="course-grid-div">
+                <img src="./images/im.jpg" alt="" />
+                <div class="div">
+                  <p class="course-name">Time Management & Productivity</p>
+                  <p class="course-description">
+                    Practical methods to organize your time and reach your goals
+                    stress-free.
+                  </p>
+                  <div class="course-extras">
+                    <p class="ratings">Ratings <span>★★★★★</span></p>
+                    <div class="students-populations">
+                      <ion-icon
+                        name="people-outline"
+                        class="ppl-icon"
+                      ></ion-icon>
+                      <p class="students">255 students</p>
+                    </div>
+                    <div class="lecturer">
+                      <ion-icon
+                        name="person-outline"
+                        class="lecturer-icon"
+                      ></ion-icon>
+                      <p class="author">By <span>Khang</span></p>
+                    </div>
+                  </div>
+                </div>
+                <button>Continue</button>
+              </div>
 
-            <div>
-              <p class="course-name">Web Development for Beginners</p>
-              <p class="course-description">
-                Learn how to build modern websites from scratch with HTML, CSS,
-                and JavaScript.
-              </p>
-              <button>Enroll Now</button>
+              <div class="course-grid-div">
+                <img src="./images/im.jpg" alt="" />
+                <div class="div">
+                  <p class="course-name">Time Management & Productivity</p>
+                  <p class="course-description">
+                    Practical methods to organize your time and reach your goals
+                    stress-free.
+                  </p>
+                  <div class="course-extras">
+                    <p class="ratings">Ratings <span>★★★★★</span></p>
+                    <div class="students-populations">
+                      <ion-icon
+                        name="people-outline"
+                        class="ppl-icon"
+                      ></ion-icon>
+                      <p class="students">255 students</p>
+                    </div>
+                    <div class="lecturer">
+                      <ion-icon
+                        name="person-outline"
+                        class="lecturer-icon"
+                      ></ion-icon>
+                      <p class="author">By <span>Khang</span></p>
+                    </div>
+                  </div>
+                </div>
+                <button>Continue</button>
+              </div>
+
+              <div class="course-grid-div">
+                <img src="./images/im.jpg" alt="" />
+                <div class="div">
+                  <p class="course-name">Web Development for Beginners</p>
+                  <p class="course-description">
+                    Learn how to build modern websites from scratch with HTML,
+                    CSS, and JavaScript.
+                  </p>
+                  <div class="course-extras">
+                    <p class="ratings">Ratings <span>★★★★★</span></p>
+                    <div class="students-populations">
+                      <ion-icon
+                        name="people-outline"
+                        class="ppl-icon"
+                      ></ion-icon>
+                      <p class="students">255 students</p>
+                    </div>
+                    <div class="lecturer">
+                      <ion-icon
+                        name="person-outline"
+                        class="lecturer-icon"
+                      ></ion-icon>
+                      <p class="author">By <span>Khang</span></p>
+                    </div>
+                  </div>
+                </div>
+                <button>Enroll Now</button>
+              </div>
             </div>
           </div>
         </div>
@@ -108,7 +201,7 @@
         <!-- YOUR COURSES PAGE -->
         <!--================-->
 
-        <div class="your-courses-page">
+        <div class="your-courses-page hide-page">
           <div class="your-courses-text">
             <h2>Explore Courses</h2>
             <p>
@@ -124,25 +217,193 @@
             <div class="tech">
               <div class="category-toggle-head">
                 <p class="category-headline">🌍 Technology & Development</p>
-                <button class="toogle-more">
-                  <ion-icon name="chevron-up-outline" class="close"></ion-icon>
-                  <ion-icon name="chevron-down-outline" class="open"></ion-icon>
-                </button>
+                <ion-icon name="chevron-up-outline" class="close"></ion-icon>
+                <ion-icon name="chevron-down-outline" class="open"></ion-icon>
               </div>
 
-              <div class="category hide-sections">
-                <div class="category-contents">
-                  <p class="category-content-headline">
-                    Introduction to Python Programming:
-                  </p>
-                  <p class="category-content-subtext">
-                    Learn coding basics with one of the world’s most popular
-                    languages.
-                  </p>
-                  <button class="category-content-btn">Enroll Now</button>
+              <div class="category">
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
                 </div>
 
-                <div class="category-contents">
+                <!-- <div class="category-contents">
                   <p class="category-content-headline">
                     Mobile App Development :
                   </p>
@@ -182,7 +443,7 @@
                     Learn how to protect information and stay safe online.
                   </p>
                   <button class="category-content-btn">Enroll Now</button>
-                </div>
+                </div> -->
               </div>
             </div>
 
@@ -192,14 +453,193 @@
             <div class="business">
               <div class="category-toggle-head">
                 <p class="category-headline">💼 Business & Entrepreneurship</p>
-                <button class="toogle-more">
-                  <ion-icon name="chevron-up-outline" class="close"></ion-icon>
-                  <ion-icon name="chevron-down-outline" class="open"></ion-icon>
-                </button>
+                <ion-icon name="chevron-up-outline" class="close"></ion-icon>
+                <ion-icon name="chevron-down-outline" class="open"></ion-icon>
               </div>
 
-              <div class="category hide-sections">
-                <div class="category-contents">
+              <div class="category">
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+
+                <!-- <div class="category-contents">
                   <p class="category-content-headline">
                     Digital Marketing Essentials
                   </p>
@@ -245,7 +685,7 @@
                     Learn how to set up and run an online store.
                   </p>
                   <button class="category-content-btn">Enroll Now</button>
-                </div>
+                </div> -->
               </div>
             </div>
 
@@ -255,14 +695,193 @@
             <div class="creative-skills">
               <div class="category-toggle-head">
                 <p class="category-headline">🎨 Creative Skills</p>
-                <button class="toogle-more">
-                  <ion-icon name="chevron-up-outline" class="close"></ion-icon>
-                  <ion-icon name="chevron-down-outline" class="open"></ion-icon>
-                </button>
+                <ion-icon name="chevron-up-outline" class="close"></ion-icon>
+                <ion-icon name="chevron-down-outline" class="open"></ion-icon>
               </div>
 
-              <div class="category hide-sections">
-                <div class="category-contents">
+              <div class="category">
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+
+                <!-- <div class="category-contents">
                   <p class="category-content-headline">
                     Graphic Design Fundamentals
                   </p>
@@ -308,7 +927,7 @@
                     Learn how to create and mix music digitally.
                   </p>
                   <button class="category-content-btn">Enroll Now</button>
-                </div>
+                </div> -->
               </div>
             </div>
 
@@ -318,14 +937,192 @@
             <div class="personal-development">
               <div class="category-toggle-head">
                 <p class="category-headline">📚 Personal Development</p>
-                <button class="toogle-more">
-                  <ion-icon name="chevron-up-outline" class="close"></ion-icon>
-                  <ion-icon name="chevron-down-outline" class="open"></ion-icon>
-                </button>
+                <ion-icon name="chevron-up-outline" class="close"></ion-icon>
+                <ion-icon name="chevron-down-outline" class="open"></ion-icon>
               </div>
 
-              <div class="category hide-sections">
-                <div class="category-contents">
+              <div class="category">
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <!-- <div class="category-contents">
                   <p class="category-content-headline">
                     Time Management & Productivity
                   </p>
@@ -371,7 +1168,7 @@
                     Stay calm and balanced in daily life.
                   </p>
                   <button class="category-content-btn">Enroll Now</button>
-                </div>
+                </div> -->
               </div>
             </div>
 
@@ -381,14 +1178,163 @@
             <div class="lifestyle-wellness">
               <div class="category-toggle-head">
                 <p class="category-headline">🌱 Lifestyle & Wellness</p>
-                <button class="toogle-more">
-                  <ion-icon name="chevron-up-outline" class="close"></ion-icon>
-                  <ion-icon name="chevron-down-outline" class="open"></ion-icon>
-                </button>
+                <ion-icon name="chevron-up-outline" class="close"></ion-icon>
+                <ion-icon name="chevron-down-outline" class="open"></ion-icon>
               </div>
 
-              <div class="category hide-sections">
-                <div class="category-contents">
+              <div class="category">
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+
+                <!-- <div class="category-contents">
                   <p class="category-content-headline">
                     Healthy Living & Nutrition
                   </p>
@@ -434,7 +1380,7 @@
                     – Manage money and savings wisely.
                   </p>
                   <button class="category-content-btn">Enroll Now</button>
-                </div>
+                </div> -->
               </div>
             </div>
 
@@ -444,14 +1390,193 @@
             <div class="academic-support">
               <div class="category-toggle-head">
                 <p class="category-headline">🧑‍🎓 Academic Support</p>
-                <button class="toogle-more">
-                  <ion-icon name="chevron-up-outline" class="close"></ion-icon>
-                  <ion-icon name="chevron-down-outline" class="open"></ion-icon>
-                </button>
+                <ion-icon name="chevron-up-outline" class="close"></ion-icon>
+                <ion-icon name="chevron-down-outline" class="open"></ion-icon>
               </div>
 
-              <div class="category hide-sections">
-                <div class="category-contents">
+              <div class="category">
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+                <div class="course-grid-div">
+                  <img src="./images/im.jpg" alt="" />
+                  <div class="div">
+                    <p class="course-name">
+                      Introduction to Python Programming:
+                    </p>
+                    <p class="course-description">
+                      Learn coding basics with one of the world’s most popular
+                      languages.
+                    </p>
+                    <div class="course-extras">
+                      <p class="ratings">Ratings <span>★★★★★</span></p>
+                      <div class="students-populations">
+                        <ion-icon
+                          name="people-outline"
+                          class="ppl-icon"
+                        ></ion-icon>
+                        <p class="students">255 students</p>
+                      </div>
+                      <div class="lecturer">
+                        <ion-icon
+                          name="person-outline"
+                          class="lecturer-icon"
+                        ></ion-icon>
+                        <p class="author">By <span>Khang</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <button>Enroll Now</button>
+                </div>
+
+                <!-- <div class="category-contents">
                   <p class="category-content-headline">Mathematics Refresher</p>
                   <p class="category-content-subtext">
                     Brush up on essential math skills.
@@ -497,7 +1622,7 @@
                     Master research methods and formal writing techniques.
                   </p>
                   <button class="category-content-btn">Enroll Now</button>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -507,7 +1632,7 @@
         <!-- YOUR ASSIGNMENT PAGE -->
         <!--================-->
 
-        <div class="assignment-page">
+        <div class="assignment-page hide-page">
           <h2 class="ass-headline">Your Assignments</h2>
           <p class="ass-subtext">
             Stay on top of your learning by checking pending, ongoing, and
@@ -535,7 +1660,7 @@
         <!-- YOUR PROFILE PAGE -->
         <!--================-->
 
-        <div class="profile-page">
+        <div class="profile-page hide-page">
           <div class="headline-content">
             <h2>My Profile</h2>
             <p>
@@ -544,41 +1669,37 @@
           </div>
 
           <div class="profile-content">
-            <ion-icon name="person-outline" class="user-img"></ion-icon>
-            <p>Name: <span class="user-name"></span></p>
-            <p>Email: <span class="user-email"></span></p>
-            <p>Enrolled course: <span class="user-courses"></span></p>
-            <button>Edit profile</button>
-            <button>Change password</button>
+            <!-- <div> -->
+            <img
+              src="./images/testimonial -students img/uifaces-popular-avatar (9).jpg"
+              alt=""
+              class="user-img"
+            />
+            <!-- </div> -->
+            <!-- <ion-icon name="person-outline" class="user-img"></ion-icon> -->
+            <div>
+              <p class="profile-text">Name:</p>
+              <p class="user-name subtext">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div>
+              <p class="profile-text">Email:</p>
+              <p class="user-email subtext">Lorem, ipsum dolor.</p>
+            </div>
+
+            <div>
+              <p class="profile-text">Enrolled course:</p>
+              <p class="user-courses subtext">Lorem, ipsum.</p>
+            </div>
+          </div>
+
+          <div class="profile-buttons">
+            <button class="edit-profile">Edit profile</button>
+            <button class="change-pwd">Change password</button>
+            <button class="logout">Logout</button>
           </div>
         </div>
       </main>
-
-      <!--================-->
-      <!-- ASIDE BAR -->
-      <!--================-->
-
-      <aside class="aside">
-        <!--================-->
-        <!--WIDGETS -->
-        <!--================-->
-        <p class="aside-headline">Widgets</p>
-
-        <div class="aside-contents">
-          <button class="aside-btn">
-            <p>Number of lessons completed:</p>
-            <span>0</span>
-          </button>
-          <button class="aside-btn">
-            <p>Average Time spent learning</p>
-            <span>0-minutes</span>
-          </button>
-          <button class="aside-btn">
-            <p>Streaks:</p>
-            <span>0-days</span>
-          </button>
-        </div>
-      </aside>
     </div>
 
     <script
