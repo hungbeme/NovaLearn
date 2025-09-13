@@ -4,19 +4,27 @@ console.log("WORKING");
 
 const btnOpen = document.querySelector(".menu-icon");
 const btnClose = document.querySelector(".close-icon");
-// const headerEl = document.querySelector(".header");
+const profileDetails = document.querySelector(".profile-content");
 const mainEl = document.querySelector(".main");
 const liOptions = document.querySelectorAll(".options");
 const dashboardEl = document.querySelector(".dashboard");
 const yourCourseEl = document.querySelector(".your-courses-page");
 const assignmentEl = document.querySelector(".assignment-page");
 const profileEl = document.querySelector(".profile-page");
+const link2courseEl = document.querySelector(".link2courses");
+const techEl = document.querySelector(".tech");
+const business = document.querySelector(".business");
+const creativeSkillsEl = document.querySelector(".creative-skills");
+const pDevelEl = document.querySelector(".personal-development");
+const pWellnessEl = document.querySelector(".lifestyle-wellness");
+const aSupportEl = document.querySelector(".academic-support");
 
 ///////////////////////////////////
 /////////// FUNCTIONS /////////////
 ///////////////////////////////////
+//
+
 const selectSections = function (className, numVal, sectionName) {
-  console.log(className, numVal, sectionName);
   //   TO CHANGE THE ACTIVE FOR THE MENU OPTIONS
   liOptions.forEach((val) => val.classList.remove("active-option"));
   className.classList.add("active-option");
@@ -26,14 +34,58 @@ const selectSections = function (className, numVal, sectionName) {
     yourCourseEl.classList.add("hide-page"),
     assignmentEl.classList.add("hide-page"),
     profileEl.classList.add("hide-page");
-
   sectionName.classList.remove("hide-page");
   document.body.classList.remove("hide");
 };
 
+// TO GET THE PROFILE INFORMATION
+const getAPIFunction2 = async function () {
+  try {
+    const response = await fetch(`https://randomuser.me/api/`);
+    const data = await response.json();
+    profileDetails.innerHTML = "";
+    const html = `
+            <img
+              src="${data.results[0].picture.large}"
+              alt=""
+              class="user-img"
+            />
+            <div>
+              <p class="profile-text">Name:</p>
+              <p class="user-name subtext">
+              ${data.results[0].name.title}
+              ${data.results[0].name.last}
+              ${data.results[0].name.first}.</p>
+            </div>
+
+            <div>
+              <p class="profile-text">User ID:</p>
+              <p class="user-courses subtext">${data.results[0].id.value}</p>
+            </div>
+
+            <div>
+              <p class="profile-text">Email:</p>
+              <p class="user-email subtext">${data.results[0].email}.</p>
+            </div>
+
+            <div>
+              <p class="profile-text">Phone Number:</p>
+              <p class="user-courses subtext">${data.results[0].phone}.</p>
+            </div>
+
+            
+    `;
+    profileDetails.insertAdjacentHTML("afterbegin", html);
+  } catch (err) {
+    alert(`Failed to fetch user details ${err} `);
+  }
+};
+getAPIFunction2();
+
 ///////////////////////////////////
 //////// EVENT LISTENERS ////////
 ///////////////////////////////////
+
 btnOpen.addEventListener("click", function () {
   document.body.classList.add("hide");
 });
@@ -42,6 +94,7 @@ btnClose.addEventListener("click", function () {
   document.body.classList.remove("hide");
 });
 
+// FOR NAVIGATION
 liOptions.forEach((val, i) => {
   val.addEventListener("click", function () {
     if (i === 0) {
@@ -54,37 +107,24 @@ liOptions.forEach((val, i) => {
       selectSections(val, i, profileEl);
     }
   });
+
+  link2courseEl.addEventListener("click", function () {
+    selectSections(liOptions[1], 1, yourCourseEl);
+  });
 });
 
-// const getAPIFunction = async function () {
-//   try {
-//     const response = await fetch("https://fakestoreapi.com/products");
-//     console.log("response1:", response);
-//     const data = await response.json();
-//     console.log("data1:", data);
-//   } catch {}
-// };
+// FOR VIEW MORE/LESS FOR COURSES
+const allElements = [
+  techEl,
+  business,
+  creativeSkillsEl,
+  pDevelEl,
+  pWellnessEl,
+  aSupportEl,
+];
 
-// const getAPIFunction2 = async function () {
-//   try {
-//     const response = await fetch("https://dummyjson.com/products/categories");
-//     console.log("response2:", response);
-//     const data = await response.json();
-//     console.log("data2:", data);
-//   } catch {}
-// };
-
-// const getAPIFunction3 = async function () {
-//   try {
-//     const response = await fetch(
-//       "https://openlibrary.org/people/mekBot/books/currently-reading.json"
-//     );
-//     console.log("response3:", response);
-//     const data = await response.json();
-//     console.log("data3:", data);
-//   } catch {}
-// };
-
-// getAPIFunction();
-// getAPIFunction2();
-// getAPIFunction3();
+allElements.forEach((val) => {
+  val.addEventListener("click", function () {
+    val.classList.toggle("hide-category");
+  });
+});

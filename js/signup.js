@@ -9,23 +9,22 @@ const API_URL = "https://reqres.in/api/";
 
 const detailsArrValues = [];
 
-const signUp = async function (userName, email, password) {
+const signUp = async function (username, email, password) {
   try {
-    const res = await fetch(`https://reqres.in/api/users`, {
+    const res = await fetch(`${API_URL}users`, {
       method: "POST",
       headers: {
         "x-api-key": "reqres-free-v1",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        username: userName,
         email: email,
         password: password,
       }),
     });
     const data = await res.json();
-
     detailsArrValues.push({
+      username: username,
       email: email,
       password: password,
     });
@@ -41,18 +40,17 @@ formSectionEl.addEventListener("submit", function (e) {
   e.preventDefault();
   const emailValue = emailEl.value.trim();
   const passwordValue = passwordEl.value.trim();
-  const userNameValue = userNameEl.value.trim();
   const confirmPasswordValue = confirmPasswordEl.value.trim();
+  const userNameVakue = userNameEl.value.trim();
 
   if (passwordValue.length < 6) {
     alert("Password must be longer than 6 digits");
   } else if (confirmPasswordValue !== passwordValue) {
     alert("password does not match");
   } else {
-    signUp(userNameValue, emailValue, passwordValue);
+    signUp(userNameVakue, emailValue, passwordValue);
   }
 });
 
 const detailsValue = JSON.parse(localStorage.getItem("UserDetails"));
-
 export { detailsValue };
