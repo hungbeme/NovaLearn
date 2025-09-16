@@ -65,8 +65,8 @@ const messageFunction = function (message, type) {
     messageEl.style.color = "red";
   } else if (type === "success") {
     messageEl.style.color = "green";
-    setTimeout(() => (window.location.href = "./login.html"), 1200);
+    setTimeout(() => (window.location.href = "./login.html"), 2200);
   }
 
-  setTimeout(() => (messageEl.style.display = "none"), 1000);
+  setTimeout(() => (messageEl.style.display = "none"), 2000);
 };

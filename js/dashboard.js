@@ -1,7 +1,5 @@
 "use script";
 
-console.log("WORKING");
-
 const btnOpen = document.querySelector(".menu-icon");
 const btnClose = document.querySelector(".close-icon");
 const profileDetails = document.querySelector(".profile-content");
@@ -20,16 +18,8 @@ const pWellnessEl = document.querySelector(".lifestyle-wellness");
 const aSupportEl = document.querySelector(".academic-support");
 const messageEl = document.querySelector(".message");
 
-document.addEventListener(
-  "DOMContentLoaded",
-  messageFunction(
-    "NOTE: This is a demo account! Some buttons do not work",
-    "error"
-  )
-);
 //  MESSAGE FUNCTION
 const messageFunction = function (message, type) {
-  console.log(messageEl);
   messageEl.style.display = "block";
   messageEl.textContent = message;
 
@@ -38,8 +28,16 @@ const messageFunction = function (message, type) {
   } else if (type === "success") {
     messageEl.style.color = "green";
   }
-  setTimeout(() => (messageEl.style.display = "none"), 1000);
+  setTimeout(() => (messageEl.style.display = "none"), 2000);
 };
+
+document.addEventListener(
+  "DOMContentLoaded",
+  messageFunction(
+    "NOTE: This is a demo account! Some buttons do not work",
+    "error"
+  )
+);
 
 ///////////////////////////////////
 /////////// FUNCTIONS /////////////
@@ -99,7 +97,6 @@ const getAPIFunction2 = async function () {
     `;
     profileDetails.insertAdjacentHTML("afterbegin", html);
   } catch (err) {
-    alert();
     messageFunction(`Failed to fetch user details ${err} `, "error");
   }
 };

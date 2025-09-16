@@ -72,10 +72,10 @@ const messageFunction = function (message, type) {
   if (type === "error") {
     messageEl.style.color = "red";
   } else if (type === "success") {
-    setTimeout(() => (window.location.href = "./Dashboard.html"), 1200);
+    setTimeout(() => (window.location.href = "./Dashboard.html"), 2200);
 
     messageEl.style.color = "green";
   }
 
-  setTimeout(() => (messageEl.style.display = "none"), 1000);
+  setTimeout(() => (messageEl.style.display = "none"), 2000);
 };
