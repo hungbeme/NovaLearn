@@ -403,7 +403,8 @@ body {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  color: #229d77;
+  color: #032c1f;
+  font-weight: 600;
   margin-bottom: 1.4rem;
   line-height: 1.5;
 }

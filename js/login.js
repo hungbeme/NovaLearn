@@ -65,7 +65,6 @@ formSectionEls.addEventListener("submit", function (e) {
 
 //  MESSAGE FUNCTION
 const messageFunction = function (message, type) {
-  console.log(messageEl);
   messageEl.style.display = "block";
   messageEl.textContent = message;
 
