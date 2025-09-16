@@ -26,6 +26,27 @@ body {
   color: var(--text-color);
 }
 
+/*********************************/
+/******  NOTIFICATION  ***********/
+/*******************************/
+
+.message-section {
+  background-color: #fff;
+  width: fit-content;
+  padding: 2.4rem 4.8rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  box-shadow: 3px -3px 10px rgb(0, 0, 0, 0.1), -3px 3px 10px rgb(0, 0, 0, 0.1);
+  display: none;
+}
+
+.message {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
 .header {
   background-color: var(--header-bg-color);
   width: 100%;

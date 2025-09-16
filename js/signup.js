@@ -5,6 +5,8 @@ const emailEl = document.getElementById("email");
 const passwordEl = document.getElementById("password");
 const confirmPasswordEl = document.getElementById("confirm-password");
 const formSectionEl = document.querySelector(".form-section");
+const messageEl = document.querySelector(".message");
+
 const API_URL = "https://reqres.in/api/";
 
 const detailsArrValues = [];
@@ -22,17 +24,15 @@ const signUp = async function (username, email, password) {
         password: password,
       }),
     });
-    const data = await res.json();
     detailsArrValues.push({
       username: username,
       email: email,
       password: password,
     });
     localStorage.setItem("UserDetails", JSON.stringify(detailsArrValues));
-    alert("User Created successfully✅");
-    window.location.href = "./login.html";
+    messageFunction("User Created successfully✅", "success");
   } catch (err) {
-    alert(`${err} Problem accessing server`);
+    messageFunction("Problem accessing server", "error");
   }
 };
 
@@ -44,9 +44,9 @@ formSectionEl.addEventListener("submit", function (e) {
   const userNameVakue = userNameEl.value.trim();
 
   if (passwordValue.length < 6) {
-    alert("Password must be longer than 6 digits");
+    messageFunction("Password must be longer than 6 digits", "error");
   } else if (confirmPasswordValue !== passwordValue) {
-    alert("password does not match");
+    messageFunction("Password does not match", "error");
   } else {
     signUp(userNameVakue, emailValue, passwordValue);
   }
@@ -54,3 +54,19 @@ formSectionEl.addEventListener("submit", function (e) {
 
 const detailsValue = JSON.parse(localStorage.getItem("UserDetails"));
 export { detailsValue };
+
+//  MESSAGE FUNCTION
+const messageFunction = function (message, type) {
+  console.log(messageEl);
+  messageEl.style.display = "block";
+  messageEl.textContent = message;
+
+  if (type === "error") {
+    messageEl.style.color = "red";
+  } else if (type === "success") {
+    messageEl.style.color = "green";
+    setTimeout(() => (window.location.href = "./login.html"), 1200);
+  }
+
+  setTimeout(() => (messageEl.style.display = "none"), 1000);
+};

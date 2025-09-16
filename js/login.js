@@ -3,8 +3,8 @@
 import { detailsValue } from "./signup.js";
 const emailEl = document.getElementById("email");
 const passwordEl = document.getElementById("password");
-// const formSectionEls = document.querySelector(".form-section");
 const formSectionEls = document.querySelector(".form-section");
+const messageEl = document.querySelector(".message");
 
 const API_URL = "https://reqres.in/api/";
 
@@ -28,13 +28,12 @@ const runApi = async function (emailValue, passwordValue) {
     if (res.ok) {
       emailEl.value = "";
       passwordEl.value = "";
-      alert("Login sucessfully✅");
-      window.location.href = "./Dashboard.html";
+      messageFunction("Login sucessfully✅", "success");
     } else {
-      alert("User not found!!!❌");
+      messageFunction("User not found!!!❌", "error");
     }
   } catch (err) {
-    alert("Error problem connecting to server❌");
+    messageFunction("Error problem connecting to server❌", "error");
   }
 };
 
@@ -58,9 +57,25 @@ formSectionEls.addEventListener("submit", function (e) {
     } else {
       emailEl.value = "";
       passwordEl.value = "";
-      alert("Login sucessfully✅");
-      window.location.href = "./Dashboard.html";
+      messageFunction("Login sucessfully✅", "success");
     }
   }
   theFunction();
 });
+
+//  MESSAGE FUNCTION
+const messageFunction = function (message, type) {
+  console.log(messageEl);
+  messageEl.style.display = "block";
+  messageEl.textContent = message;
+
+  if (type === "error") {
+    messageEl.style.color = "red";
+  } else if (type === "success") {
+    setTimeout(() => (window.location.href = "./Dashboard.html"), 1200);
+
+    messageEl.style.color = "green";
+  }
+
+  setTimeout(() => (messageEl.style.display = "none"), 1000);
+};

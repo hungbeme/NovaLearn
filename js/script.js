@@ -63,3 +63,18 @@ const observerEl = new IntersectionObserver(
 );
 
 observerEl.observe(heroSectionEl);
+
+////////////////////////////////////////////////////
+//////////////// FAQ SECTION //////////////////////
+////////////////////////////////////////////////////
+
+const faqQuestionEl = document.querySelectorAll(".faq-question");
+const iconEl = document.querySelectorAll(".icon-plus");
+
+faqQuestionEl.forEach((question) => {
+  question.addEventListener("click", function () {
+    question.classList.toggle("active");
+    const answerEl = question.nextElementSibling;
+    answerEl.classList.toggle("active");
+  });
+});

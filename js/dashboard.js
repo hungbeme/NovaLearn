@@ -18,6 +18,28 @@ const creativeSkillsEl = document.querySelector(".creative-skills");
 const pDevelEl = document.querySelector(".personal-development");
 const pWellnessEl = document.querySelector(".lifestyle-wellness");
 const aSupportEl = document.querySelector(".academic-support");
+const messageEl = document.querySelector(".message");
+
+document.addEventListener(
+  "DOMContentLoaded",
+  messageFunction(
+    "NOTE: This is a demo account! Some buttons do not work",
+    "error"
+  )
+);
+//  MESSAGE FUNCTION
+const messageFunction = function (message, type) {
+  console.log(messageEl);
+  messageEl.style.display = "block";
+  messageEl.textContent = message;
+
+  if (type === "error") {
+    messageEl.style.color = "red";
+  } else if (type === "success") {
+    messageEl.style.color = "green";
+  }
+  setTimeout(() => (messageEl.style.display = "none"), 1000);
+};
 
 ///////////////////////////////////
 /////////// FUNCTIONS /////////////
@@ -77,7 +99,8 @@ const getAPIFunction2 = async function () {
     `;
     profileDetails.insertAdjacentHTML("afterbegin", html);
   } catch (err) {
-    alert(`Failed to fetch user details ${err} `);
+    alert();
+    messageFunction(`Failed to fetch user details ${err} `, "error");
   }
 };
 getAPIFunction2();
